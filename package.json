@@ -1,0 +1,15 @@
+{
+  "name": "aws-iot-garden",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "register": "node registerThings.js",
+    "convert": "node convertCerts.js",
+    "start": "yarn register && yarn convert"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.266.1",
+    "dotenv": "^6.0.0"
+  }
+}
